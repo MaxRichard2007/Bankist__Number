@@ -362,17 +362,43 @@ btnSort.addEventListener("click", function (e) {
 // });
 
 // 287,460,000,000
-const diameter = 287_460_000_000;
-console.log(diameter);
+// const diameter = 287_460_000_000;
+// console.log(diameter);
 
-const price = 345_99;
-console.log(price);
+// const price = 345_99;
+// console.log(price);
 
-const transferFeel = 15_00;
-const transferFeel2 = 1_500;
+// const transferFeel = 15_00;
+// const transferFeel2 = 1_500;
 
-const PI = 3.1415;
-console.log(PI);
+// const PI = 3.1415;
+// console.log(PI);
 
-console.log(Number("230_000"));
-console.log(parseInt("230_000"));
+// console.log(Number("230_000"));
+// console.log(parseInt("230_000"));
+
+console.log("2 ** 53 - 1 = ", 2 ** 53 - 1);
+console.log(Number.Max_SAFE_INTEGER);
+console.log("2 ** 53 + 1 = ", 2 ** 53 + 1);
+console.log("2 ** 53 + 2 = ", 2 ** 53 + 2);
+console.log("2 ** 53 + 3 = ", 2 ** 53 + 3);
+console.log("2 ** 53 + 4 = ", 2 ** 53 + 4);
+
+// console.log(758734875082738478057208972893885947587498270894759887); // ERRORE
+console.log("n = ", 758734875082738478057208972893885947587498270894759887n);
+console.log("BigInt = ", BigInt(7587348750842738));
+
+// Operation
+console.log("1000n + 10000n = ", 1000n + 10000n);
+console.log("1000n * 10000n = ", 10000000000000000000n * 10000000000000000000n);
+
+const huge = 925890324759073445808858937957n;
+const num = 23;
+
+console.log(huge * BigInt(num));
+
+// Exceptions
+console.log("200n > 15 = ", 200n > 15);
+console.log("20 === 20 = ", 20 === 20);
+console.log("typeof 20n = ", typeof 20n);
+console.log("20 == '20' = ", 20 == "20");
