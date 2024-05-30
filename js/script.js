@@ -377,28 +377,60 @@ btnSort.addEventListener("click", function (e) {
 // console.log(Number("230_000"));
 // console.log(parseInt("230_000"));
 
-console.log("2 ** 53 - 1 = ", 2 ** 53 - 1);
-console.log(Number.Max_SAFE_INTEGER);
-console.log("2 ** 53 + 1 = ", 2 ** 53 + 1);
-console.log("2 ** 53 + 2 = ", 2 ** 53 + 2);
-console.log("2 ** 53 + 3 = ", 2 ** 53 + 3);
-console.log("2 ** 53 + 4 = ", 2 ** 53 + 4);
+// console.log("2 ** 53 - 1 = ", 2 ** 53 - 1);
+// console.log(Number.Max_SAFE_INTEGER);
+// console.log("2 ** 53 + 1 = ", 2 ** 53 + 1);
+// console.log("2 ** 53 + 2 = ", 2 ** 53 + 2);
+// console.log("2 ** 53 + 3 = ", 2 ** 53 + 3);
+// console.log("2 ** 53 + 4 = ", 2 ** 53 + 4);
 
-// console.log(758734875082738478057208972893885947587498270894759887); // ERRORE
-console.log("n = ", 758734875082738478057208972893885947587498270894759887n);
-console.log("BigInt = ", BigInt(7587348750842738));
+// // console.log(758734875082738478057208972893885947587498270894759887); // ERRORE
+// console.log("n = ", 758734875082738478057208972893885947587498270894759887n);
+// console.log("BigInt = ", BigInt(7587348750842738));
 
-// Operation
-console.log("1000n + 10000n = ", 1000n + 10000n);
-console.log("1000n * 10000n = ", 10000000000000000000n * 10000000000000000000n);
+// // Operation
+// console.log("1000n + 10000n = ", 1000n + 10000n);
+// console.log("1000n * 10000n = ", 10000000000000000000n * 10000000000000000000n);
 
-const huge = 925890324759073445808858937957n;
-const num = 23;
+// const huge = 925890324759073445808858937957n;
+// const num = 23;
 
-console.log(huge * BigInt(num));
+// console.log(huge * BigInt(num));
 
-// Exceptions
-console.log("200n > 15 = ", 200n > 15);
-console.log("20 === 20 = ", 20 === 20);
-console.log("typeof 20n = ", typeof 20n);
-console.log("20 == '20' = ", 20 == "20");
+// // Exceptions
+// console.log("200n > 15 = ", 200n > 15);
+// console.log("20 === 20 = ", 20 === 20);
+// console.log("typeof 20n = ", typeof 20n);
+// console.log("20 == '20' = ", 20 == "20");
+
+// create date
+
+/*
+const now = new Date();
+console.log(now);
+
+console.log(new Date("May 05 30 9:56:13"));
+console.log(new Date("May 30, 2024"));
+console.log(account1.movementsDates[0]);
+
+console.log(new Date("2024, 5, 30"));
+
+console.log(new Date("0"));
+console.log(new Date(3 * 24 * 60 * 60 * 1000));
+*/
+
+// Working with dates
+const future = new Date(2024, 5, 30, 10, 15);
+console.log("Year =", future.getFullYear());
+console.log("Date =", future.getDate());
+console.log("Month =", future.getMonth());
+console.log("Day =", future.getDay());
+console.log("Hours =", future.getHours());
+console.log("Minutes =", future.getMinutes());
+console.log("Seconds =", future.getSeconds());
+console.log("Milliseconds =", future.getMilliseconds());
+console.log('All of them =',future.toISOString());
+console.log('Milliseconds =',future.getTime());
+
+future.setFullYear(2024);
+console.log(future)
