@@ -291,14 +291,16 @@ btnLoan.addEventListener("click", function (e) {
     amount > 0 &&
     currentAccount.movements.some((mov) => mov >= amount * 0.1)
   ) {
-    // Add movement
-    currentAccount.movements.push(amount);
+    setTimeout(function () {
+      // Add movement
+      currentAccount.movements.push(amount);
 
-    // add loan date
-    currentAccount.movementsDates.push(new Date().toISOString());
+      // add loan date
+      currentAccount.movementsDates.push(new Date().toISOString());
 
-    // Update UI
-    updateUI(currentAccount);
+      // Update UI
+      updateUI(currentAccount);
+    }, 3000);
   }
   inputLoanAmount.value = "";
 });
@@ -525,14 +527,37 @@ console.log(new Date(3 * 24 * 60 * 60 * 1000));
 // const days1 = calcDaysPassed(new Date(2024, 6, 3), new Date(2024, 6, 13));
 // console.log(days1);
 
-const num = 426455.43;
+// const num = 426455.43;
 
-const options = {
-  style: "unit",
-  unit: "celsius",
-  // currency: "USD",
-};
+// const options = {
+//   style: "unit",
+//   unit: "celsius",
+//   // currency: "USD",
+// };
 
-console.log("US: ", Intl.NumberFormat("en-Us", options).format(num));
-console.log("Germany: ", Intl.NumberFormat("de-DE", options).format(num));
-console.log("Syria: ", Intl.NumberFormat("ar-SY", options).format(num));
+// console.log("US: ", Intl.NumberFormat("en-Us", options).format(num));
+// console.log("Germany: ", Intl.NumberFormat("de-DE", options).format(num));
+// console.log("Syria: ", Intl.NumberFormat("ar-SY", options).format(num));
+
+// SetTimeout
+const ingredients = ["olives", "spinach"];
+
+const pizzaTimer = setTimeout(
+  (ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2} 🍕`),
+  3000,
+  ...ingredients
+);
+
+console.log("Waiting...");
+
+if (ingredients.includes("spinach")) clearTimeout(pizzaTimer);
+
+// setInterval
+setInterval(function () {
+  const now = new Date();
+  const hours = now.getHours();
+  const minute = now.getMinutes();
+  const seconds = now.getSeconds();
+
+  console.log(`${hours}:${minute}:${seconds}`);
+}, 1000);
