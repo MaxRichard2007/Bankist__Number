@@ -30,7 +30,7 @@ You must enter the username and password of each account **correctly**, otherwis
 
 ```
 Owner: Max Richard
-Movements: [200, 450, -400, 3000, -650, -130, 70, 1300]
+Movements: [900.41, 10800.23, -7606.5, 55500, -1042.21, -23.9, 4000]
 Interest Rate: 1.2%
 PIN: 1111
 ```
